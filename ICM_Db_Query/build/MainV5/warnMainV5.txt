@@ -1,0 +1,324 @@
+missing module named time.localtime - imported by time, MySQLdb.times
+missing module named codecs.mbcs_encode - imported by codecs, encodings.mbcs
+missing module named codecs.mbcs_decode - imported by codecs, encodings.mbcs
+missing module named resource - imported by posix, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named posix - imported by os, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named datetime.date - imported by datetime, _strptime, MySQLdb.times, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named datetime.timezone - imported by datetime, openpyxl.utils.datetime
+missing module named datetime.tzinfo - imported by datetime, openpyxl.utils.datetime
+missing module named datetime.timedelta - imported by datetime, MySQLdb.times, openpyxl.utils.datetime
+missing module named datetime.time - imported by datetime, MySQLdb.times
+missing module named datetime.datetime - imported by datetime, insert_logs, SummaryQuery, MySQLdb.times, Insert_mysql, insert_execl, Input_date
+missing module named time.time - imported by time, threading, Queue, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named time.sleep - imported by time, threading, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named threading.current_thread - imported by threading, _threading_local, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named threading.RLock - imported by threading, _threading_local, openpyxl.compat.functools, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named sys.modules - imported by sys, dummy_threading, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _dummy_threading - imported by dummy_threading, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _dummy_threading.__all__ - imported by _dummy_threading, dummy_threading, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _collections.defaultdict - imported by _collections, collections, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _collections.deque - imported by _collections, collections, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named cPickle.dumps - imported by cPickle, collections, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named cPickle.loads - imported by cPickle, collections, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named collections.deque - imported by collections, shlex, threading, Queue, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named itertools.repeat - imported by itertools, collections, decimal, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named itertools.starmap - imported by itertools, collections, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named itertools.groupby - imported by itertools, openpyxl.worksheet.datavalidation
+missing module named itertools.count - imported by itertools, heapq, threading, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named itertools.chain - imported by itertools, heapq, tokenize, collections, decimal, openpyxl.worksheet.worksheet, openpyxl.chart.reference, openpyxl.worksheet.datavalidation, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named itertools.izip - imported by itertools, heapq, openpyxl.compat.itertools, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named itertools.tee - imported by itertools, heapq, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named itertools.islice - imported by itertools, repr, heapq, openpyxl.worksheet.worksheet, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named itertools.imap - imported by itertools, heapq, collections, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named operator.eq - imported by operator, collections, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named operator.itemgetter - imported by operator, collections, heapq, openpyxl.writer.etree_worksheet, openpyxl.writer.lxml_worksheet, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named operator.attrgetter - imported by operator, inspect, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named posix._exit - imported by posix, os, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named nt._getfullpathname - imported by nt, ntpath, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named nt._isdir - imported by nt, ntpath, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named nt._exit - imported by nt, os, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named os2 - imported by os, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named os2._exit - imported by os2, os, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _emx_link - imported by os, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _emx_link.link - imported by _emx_link, os, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named ce - imported by os, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named ce._exit - imported by ce, os, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named riscos - imported by os, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named riscos._exit - imported by riscos, os, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named riscospath - imported by os, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named riscosenviron - imported by os, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named riscosenviron._Environ - imported by riscosenviron, os, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named 'org.python' - imported by pickle, D:\workspace\MyProject\ICM_Db_Query\MainV5.py, xml.sax
+missing module named 'org.python'.imp - imported by 'org.python', xml.sax
+missing module named 'org.python'.PyStringMap - imported by 'org.python', pickle, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _subprocess.SW_HIDE - imported by _subprocess, subprocess, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _subprocess.STARTF_USESTDHANDLES - imported by _subprocess, subprocess, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _subprocess.STD_ERROR_HANDLE - imported by _subprocess, subprocess, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _subprocess.CREATE_NEW_CONSOLE - imported by _subprocess, subprocess, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _subprocess.STARTF_USESHOWWINDOW - imported by _subprocess, subprocess, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _subprocess.STD_INPUT_HANDLE - imported by _subprocess, subprocess, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _subprocess.CREATE_NEW_PROCESS_GROUP - imported by _subprocess, subprocess, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _subprocess.STD_OUTPUT_HANDLE - imported by _subprocess, subprocess, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named re.__all__ - imported by re, sre, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named re._compile - imported by re, sre, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _sre.MAXREPEAT - imported by _sre, sre_constants, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named collections.OrderedDict - imported by collections, unittest.util, openpyxl.compat, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named clr - imported by pyreadline.clipboard.ironpython_clipboard, pyreadline.console.ironpython_console, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named IronPythonConsole - imported by pyreadline.console.ironpython_console, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.SSL_ERROR_SYSCALL - imported by _ssl, socket, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.SSL_ERROR_WANT_WRITE - imported by _ssl, socket, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.SSL_ERROR_INVALID_ERROR_CODE - imported by _ssl, socket, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.SSL_ERROR_SSL - imported by _ssl, socket, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.SSL_ERROR_WANT_X509_LOOKUP - imported by _ssl, socket, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.SSL_ERROR_ZERO_RETURN - imported by _ssl, socket, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.SSL_ERROR_WANT_CONNECT - imported by _ssl, socket, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.SSL_ERROR_WANT_READ - imported by _ssl, socket, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.SSL_ERROR_EOF - imported by _ssl, socket, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named operator._compare_digest - imported by operator, hmac, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named sys.stderr - imported by sys, smtplib, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named array.array - imported by array, httplib, openpyxl.styles.styleable, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named sys.py3kwarning - imported by sys, httplib, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named strop.uppercase - imported by strop, string, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named strop.lowercase - imported by strop, string, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named strop.maketrans - imported by strop, string, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named strop.whitespace - imported by strop, string, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named rourl2path - imported by urllib, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named rourl2path.pathname2url - imported by rourl2path, urllib, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named rourl2path.url2pathname - imported by rourl2path, urllib, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.OPENSSL_VERSION - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.OPENSSL_VERSION_INFO - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.OPENSSL_VERSION_NUMBER - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl._SSLContext - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.SSLZeroReturnError - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.SSLSyscallError - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.SSLWantWriteError - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.SSLError - imported by _ssl, ssl, socket, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.SSLWantReadError - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.SSLEOFError - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.CERT_OPTIONAL - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.CERT_NONE - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.CERT_REQUIRED - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.nid2obj - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.txt2obj - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.RAND_add - imported by _ssl, ssl, socket, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.RAND_status - imported by _ssl, ssl, socket, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.RAND_egd - imported by _ssl, ssl, socket, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.HAS_SNI - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.HAS_NPN - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.HAS_ALPN - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.HAS_ECDH - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl._OPENSSL_API_VERSION - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named socket._fileobject - imported by socket, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named socket._delegate_methods - imported by socket, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named socket.socket - imported by socket, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named socket.error - imported by socket, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.enum_certificates - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ssl.enum_crls - imported by _ssl, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named socket.SOCK_STREAM - imported by socket, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named socket.create_connection - imported by socket, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named socket.AF_INET - imported by socket, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named socket.SOL_SOCKET - imported by socket, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named socket.SO_TYPE - imported by socket, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named time.strptime - imported by time, ssl, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named unicodedata.ucd_3_2_0 - imported by unicodedata, stringprep, encodings.idna
+missing module named binascii.a2b_uu - imported by binascii, encodings.uu_codec
+missing module named binascii.b2a_uu - imported by binascii, encodings.uu_codec
+missing module named _functools.reduce - imported by _functools, functools, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _functools.partial - imported by _functools, functools, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named functools.lru_cache - imported by functools, openpyxl.compat
+missing module named locale.normalize - imported by locale, gettext, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named SOCKS - imported by ftplib, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named termios - imported by getpass, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named EasyDialogs - imported by getpass, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named EasyDialogs.AskPassword - imported by EasyDialogs, getpass, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _scproxy - imported by urllib, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _scproxy._get_proxies - imported by _scproxy, urllib, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _scproxy._get_proxy_settings - imported by _scproxy, urllib, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named pwd - imported by posixpath, getpass, shutil, tarfile, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named pwd.getpwnam - imported by pwd, shutil
+missing module named System - imported by pyreadline.clipboard.ironpython_clipboard, pyreadline.keysyms.ironpython_keysyms, pyreadline.console.ironpython_console, pyreadline.rlmain, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named itertools.ifilter - imported by itertools, sets, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named itertools.ifilterfalse - imported by itertools, sets, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named startup - imported by pyreadline.keysyms.common, pyreadline.keysyms.keysyms, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named pyreadline.keysyms.make_keysym - imported by pyreadline.keysyms, pyreadline.console.ironpython_console, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named pyreadline.keysyms.make_KeyPress_from_keydescr - imported by pyreadline.keysyms, pyreadline.console.ironpython_console, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named pyreadline.keysyms.make_keyinfo - imported by pyreadline.keysyms, pyreadline.console.ironpython_console, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named pyreadline.keysyms.make_KeyPress - imported by pyreadline.keysyms, pyreadline.console.ironpython_console, pyreadline.console.console, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named pyreadline.keysyms.KeyPress - imported by pyreadline.keysyms, pyreadline.console.console, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named console - imported by pyreadline.console.ansi, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.Union - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.Array - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.Structure - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes._Pointer - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.CFuncPtr - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.__version__ - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.RTLD_GLOBAL - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.RTLD_LOCAL - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.ArgumentError - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.FormatError - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.FUNCFLAG_CDECL - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.FUNCFLAG_PYTHONAPI - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.FUNCFLAG_USE_LASTERROR - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.FUNCFLAG_USE_ERRNO - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.LoadLibrary - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.FUNCFLAG_STDCALL - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.dlopen - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.sizeof - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.byref - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.resize - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.addressof - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.alignment - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.set_errno - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.get_errno - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes._SimpleCData - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.pointer - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes._pointer_type_cache - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.set_conversion_mode - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes._check_HRESULT - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.set_last_error - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.get_last_error - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes._memmove_addr - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes._memset_addr - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes._cast_addr - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes._string_at_addr - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes._wstring_at_addr - imported by _ctypes, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _ctypes.call_function - imported by _ctypes, pyreadline.console.console, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _io.UnsupportedOperation - imported by _io, io, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _io.TextIOWrapper - imported by _io, io, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _io.BufferedRWPair - imported by _io, io, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _io.StringIO - imported by _io, io, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _io.BufferedRandom - imported by _io, io, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _io.BufferedReader - imported by _io, io, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _io.IncrementalNewlineDecoder - imported by _io, io, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _io.BlockingIOError - imported by _io, io, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _io.FileIO - imported by _io, io, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _io.BufferedWriter - imported by _io, io, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _io.open - imported by _io, io, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _io.BytesIO - imported by _io, io, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _io.DEFAULT_BUFFER_SIZE - imported by _io, io, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named math.modf - imported by math, jdcal
+missing module named math.isnan - imported by math, openpyxl.compat.strings
+missing module named math.pi - imported by math, random, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named math.e - imported by math, random, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named math.log - imported by math, random, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named math.exp - imported by math, random, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named math.ceil - imported by math, random, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named math.acos - imported by math, random, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named math.cos - imported by math, random, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named math.sqrt - imported by math, random, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named math.sin - imported by math, random, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named os.urandom - imported by os, random, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named binascii.a2b_base64 - imported by binascii, email.base64mime, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named binascii.b2a_base64 - imported by binascii, email.base64mime, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named binascii.a2b_qp - imported by binascii, quopri, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named binascii.b2a_qp - imported by binascii, quopri, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named binascii.hexlify - imported by binascii, random, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _weakref.ProxyType - imported by _weakref, weakref, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _weakref.CallableProxyType - imported by _weakref, weakref, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _weakref.getweakrefcount - imported by _weakref, weakref, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _weakref.getweakrefs - imported by _weakref, weakref, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _weakref.proxy - imported by _weakref, weakref, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _weakref.ReferenceType - imported by _weakref, weakref, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _weakref.ref - imported by _weakref, _weakrefset, weakref, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named exceptions.StandardError - imported by exceptions, _mysql_exceptions
+missing module named exceptions.Warning - imported by exceptions, _mysql_exceptions
+missing module named exceptions.Exception - imported by exceptions, _mysql_exceptions
+missing module named exceptions.ReferenceError - imported by exceptions, weakref, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named org - imported by copy, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named org.PyStringMap - imported by org, copy, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named __builtin__.open - imported by __builtin__, tarfile
+missing module named copy.deepcopy - imported by copy, weakref, sets, openpyxl.reader.style, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _hashlib.pbkdf2_hmac - imported by _hashlib, hashlib, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _struct._clearcache - imported by _struct, struct, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _struct.__doc__ - imported by _struct, struct, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named struct.calcsize - imported by struct, ctypes, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named hashlib.sha1 - imported by hashlib, uuid
+missing module named hashlib.md5 - imported by hashlib, uuid
+missing module named cStringIO.StringIO - imported by cStringIO, pprint, gettext, socket, email.parser, email.message, tempfile, quopri, httplib, urllib, email.generator, email.iterators, shlex, pickle, tarfile, D:\workspace\MyProject\ICM_Db_Query\MainV5.py, xml.sax, encodings.uu_codec, encodings.quopri_codec
+missing module named fcntl - imported by tempfile, subprocess, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named thread.get_ident - imported by thread, collections, openpyxl.compat.odict, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named thread.stack_size - imported by thread, threading, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named thread._local - imported by thread, threading, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named thread.allocate_lock - imported by thread, _strptime, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named warnings.warn - imported by warnings, contextlib, random, MySQLdb.cursors, MySQLdb.connections, openpyxl.styles.styleable, openpyxl.worksheet.header_footer, openpyxl.reader.worksheet, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named warnings.warnpy3k - imported by warnings, urllib, rfc822, mimetools, tarfile, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named warnings.catch_warnings - imported by warnings, mimetools, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named warnings.filterwarnings - imported by warnings, mimetools, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _warnings.warn - imported by _warnings, warnings, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _warnings.default_action - imported by _warnings, warnings, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _warnings.once_registry - imported by _warnings, warnings, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _warnings.filters - imported by _warnings, warnings, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _warnings.warn_explicit - imported by _warnings, warnings, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named errno.ENOENT - imported by errno, gettext, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named errno.EINVAL - imported by errno, StringIO, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named collections.namedtuple - imported by collections, inspect, unittest.util, difflib, ssl, urlparse, doctest, decimal, openpyxl.compat.functools, D:\workspace\MyProject\ICM_Db_Query\MainV5.py
+missing module named _json.make_encoder - imported by _json, json.encoder
+missing module named _json.encode_basestring_ascii - imported by _json, json.encoder
+missing module named _json.scanstring - imported by _json, json.decoder
+missing module named _json.make_scanner - imported by _json, json.scanner
+missing module named openpyxl.descriptors.Alias - imported by openpyxl.descriptors, openpyxl.styles.alignment, openpyxl.styles.borders, openpyxl.styles.fills, openpyxl.styles.fonts, openpyxl.worksheet.dimensions, openpyxl.worksheet.protection, openpyxl.packaging.relationship, openpyxl.chart.area_chart, openpyxl.chart._chart, openpyxl.chart._3d, openpyxl.chart.marker, openpyxl.chart.layout, openpyxl.chart.shapes, openpyxl.drawing.colors, openpyxl.drawing.fill, openpyxl.drawing.line, openpyxl.drawing.shapes, openpyxl.chart.text, openpyxl.drawing.text, openpyxl.chart.data_source, openpyxl.chart.error_bar, openpyxl.chart.legend, openpyxl.chart.series, openpyxl.chart.label, openpyxl.chart.trendline, openpyxl.chart.title, openpyxl.chart.chartspace, openpyxl.chart.bar_chart, openpyxl.chart.axis, openpyxl.chart.bubble_chart, openpyxl.chart.line_chart, openpyxl.chart.pie_chart, openpyxl.chart.radar_chart, openpyxl.chart.scatter_chart, openpyxl.chart.stock_chart, openpyxl.chart.surface_chart, openpyxl.drawing.graphic, openpyxl.chartsheet.relation, openpyxl.workbook.properties, openpyxl.cell.text, openpyxl.comments.author
+missing module named openpyxl.cell.column_index_from_string - imported by openpyxl.cell, openpyxl.drawing.image
+missing module named openpyxl.cell.Cell - imported by openpyxl.cell, openpyxl.worksheet.worksheet, openpyxl.writer.write_only, openpyxl.reader.worksheet, openpyxl.cell.read_only
+missing module named openpyxl.worksheet.rows_from_range - imported by openpyxl.worksheet, openpyxl.worksheet.datavalidation
+missing module named openpyxl.worksheet.ColumnDimension - imported by openpyxl.worksheet, openpyxl.reader.worksheet
+missing module named openpyxl.worksheet.RowDimension - imported by openpyxl.worksheet, openpyxl.reader.worksheet
+missing module named openpyxl.worksheet.Worksheet - imported by openpyxl.worksheet, openpyxl.workbook.workbook, openpyxl.writer.write_only, openpyxl.chart.reference, openpyxl.writer.workbook, openpyxl.reader.worksheet, openpyxl.worksheet.read_only
+missing module named openpyxl.descriptors.MinMax - imported by openpyxl.descriptors, openpyxl.styles.alignment, openpyxl.styles.colors, openpyxl.descriptors.excel, openpyxl.drawing.colors, openpyxl.drawing.fill, openpyxl.drawing.line, openpyxl.drawing.shapes, openpyxl.drawing.text, openpyxl.chart.reference, openpyxl.chart.chartspace, openpyxl.chart.axis, openpyxl.chart.bubble_chart, openpyxl.chart.pie_chart
+missing module named openpyxl.descriptors.Descriptor - imported by openpyxl.descriptors, openpyxl.styles.hashable, openpyxl.styles.colors
+missing module named openpyxl.descriptors.Min - imported by openpyxl.descriptors, openpyxl.styles.alignment
+missing module named openpyxl.descriptors.NoneSet - imported by openpyxl.descriptors, openpyxl.styles.alignment, openpyxl.styles.borders, openpyxl.styles.fills, openpyxl.formatting.rule, openpyxl.worksheet.page, openpyxl.worksheet.views, openpyxl.packaging.relationship, openpyxl.drawing.spreadsheet_drawing, openpyxl.chart.layout, openpyxl.drawing.fill, openpyxl.drawing.effect, openpyxl.drawing.line, openpyxl.drawing.shapes, openpyxl.drawing.text, openpyxl.chart.chartspace, openpyxl.chart.axis, openpyxl.chart.pie_chart, openpyxl.drawing.graphic, openpyxl.cell.text, openpyxl.worksheet.datavalidation
+missing module named openpyxl.descriptors.MatchPattern - imported by openpyxl.descriptors, openpyxl.descriptors.excel
+missing module named openpyxl.descriptors.Integer - imported by openpyxl.descriptors, openpyxl.styles.colors, openpyxl.descriptors.excel, openpyxl.styles.differential, openpyxl.formatting.rule, openpyxl.worksheet.page, openpyxl.worksheet.dimensions, openpyxl.worksheet.protection, openpyxl.worksheet.views, openpyxl.worksheet.pagebreak, openpyxl.drawing.spreadsheet_drawing, openpyxl.chart.area_chart, openpyxl.chart._chart, openpyxl.drawing.colors, openpyxl.drawing.fill, openpyxl.drawing.effect, openpyxl.drawing.line, openpyxl.drawing.shapes, openpyxl.drawing.text, openpyxl.chart.data_source, openpyxl.chart.legend, openpyxl.chart.series, openpyxl.chart.label, openpyxl.chart.chartspace, openpyxl.chart.bar_chart, openpyxl.chart.axis, openpyxl.chart.bubble_chart, openpyxl.chart.pie_chart, openpyxl.chart.surface_chart, openpyxl.drawing.graphic, openpyxl.chartsheet.relation, openpyxl.chartsheet.protection, openpyxl.chartsheet.views, openpyxl.chartsheet.custom, openpyxl.chartsheet.publish, openpyxl.cell.text, openpyxl.styles.named_styles, openpyxl.comments.properties
+missing module named openpyxl.descriptors.Bool - imported by openpyxl.descriptors, openpyxl.styles.alignment, openpyxl.styles.borders, openpyxl.styles.colors, openpyxl.styles.protection, openpyxl.formatting.rule, openpyxl.worksheet.page, openpyxl.worksheet.dimensions, openpyxl.worksheet.protection, openpyxl.worksheet.views, openpyxl.worksheet.properties, openpyxl.worksheet.pagebreak, openpyxl.drawing.spreadsheet_drawing, openpyxl.chart.area_chart, openpyxl.drawing.fill, openpyxl.drawing.effect, openpyxl.drawing.line, openpyxl.drawing.shapes, openpyxl.drawing.text, openpyxl.chart.data_source, openpyxl.chart.series, openpyxl.chart.label, openpyxl.chart.chartspace, openpyxl.chart.bar_chart, openpyxl.chart.axis, openpyxl.chart.bubble_chart, openpyxl.chart.pie_chart, openpyxl.chart.surface_chart, openpyxl.drawing.graphic, openpyxl.chartsheet.properties, openpyxl.chartsheet.protection, openpyxl.chartsheet.views, openpyxl.chartsheet.custom, openpyxl.chartsheet.publish, openpyxl.cell.text, openpyxl.worksheet.datavalidation, openpyxl.styles.named_styles, openpyxl.comments.properties
+missing module named openpyxl.descriptors.Float - imported by openpyxl.descriptors, openpyxl.styles.fills, openpyxl.formatting.rule, openpyxl.worksheet.page, openpyxl.worksheet.dimensions, openpyxl.worksheet.views, openpyxl.chart.layout, openpyxl.drawing.effect, openpyxl.drawing.line, openpyxl.drawing.shapes, openpyxl.chart.error_bar, openpyxl.chart.label, openpyxl.chart.chartspace, openpyxl.chart.axis, openpyxl.chart.pie_chart, openpyxl.comments.properties
+missing module named openpyxl.descriptors.Typed - imported by openpyxl.descriptors, openpyxl.styles, openpyxl.styles.borders, openpyxl.styles.colors, openpyxl.descriptors.excel, openpyxl.styles.differential, openpyxl.formatting.rule, openpyxl.worksheet.views, openpyxl.worksheet.properties, openpyxl.drawing.spreadsheet_drawing, openpyxl.chart.area_chart, openpyxl.chart._chart, openpyxl.chart._3d, openpyxl.chart.marker, openpyxl.chart.layout, openpyxl.chart.shapes, openpyxl.drawing.colors, openpyxl.drawing.fill, openpyxl.drawing.effect, openpyxl.drawing.line, openpyxl.drawing.shapes, openpyxl.chart.text, openpyxl.drawing.text, openpyxl.chart.data_source, openpyxl.chart.error_bar, openpyxl.chart.legend, openpyxl.chart.reference, openpyxl.chart.series, openpyxl.chart.label, openpyxl.chart.trendline, openpyxl.chart.title, openpyxl.chart.chartspace, openpyxl.chart.bar_chart, openpyxl.chart.descriptors, openpyxl.chart.axis, openpyxl.chart.bubble_chart, openpyxl.chart.line_chart, openpyxl.chart.updown_bars, openpyxl.chart.pie_chart, openpyxl.chart.radar_chart, openpyxl.chart.scatter_chart, openpyxl.chart.stock_chart, openpyxl.chart.surface_chart, openpyxl.drawing.graphic, openpyxl.chartsheet.chartsheet, openpyxl.chartsheet.properties, openpyxl.chartsheet.views, openpyxl.chartsheet.custom, openpyxl.workbook.properties, openpyxl.cell.text, openpyxl.styles.named_styles, openpyxl.comments.properties
+missing module named openpyxl.descriptors.String - imported by openpyxl.descriptors, openpyxl.styles.colors, openpyxl.styles.numbers, openpyxl.worksheet.hyperlink, openpyxl.descriptors.excel, openpyxl.styles.differential, openpyxl.formatting.rule, openpyxl.worksheet.page, openpyxl.worksheet.dimensions, openpyxl.worksheet.protection, openpyxl.worksheet.views, openpyxl.worksheet.properties, openpyxl.packaging.relationship, openpyxl.drawing.effect, openpyxl.drawing.line, openpyxl.drawing.shapes, openpyxl.drawing.text, openpyxl.chart.data_source, openpyxl.chart.reference, openpyxl.chart.series, openpyxl.chart.label, openpyxl.chart.trendline, openpyxl.chart.chartspace, openpyxl.chart.axis, openpyxl.drawing.graphic, openpyxl.packaging.manifest, openpyxl.chartsheet.properties, openpyxl.chartsheet.protection, openpyxl.chartsheet.publish, openpyxl.workbook.properties, openpyxl.workbook.names.external, openpyxl.cell.text, openpyxl.worksheet.datavalidation, openpyxl.comments.properties
+missing module named openpyxl.descriptors.Set - imported by openpyxl.descriptors, openpyxl.styles.fills, openpyxl.formatting.rule, openpyxl.worksheet.views, openpyxl.packaging.relationship, openpyxl.chart.area_chart, openpyxl.drawing.colors, openpyxl.drawing.fill, openpyxl.drawing.effect, openpyxl.drawing.line, openpyxl.drawing.shapes, openpyxl.drawing.text, openpyxl.chart.error_bar, openpyxl.chart.label, openpyxl.chart.axis, openpyxl.chart.bubble_chart, openpyxl.drawing.graphic, openpyxl.chartsheet.chartsheet, openpyxl.chartsheet.custom, openpyxl.chartsheet.publish, openpyxl.cell.text, openpyxl.comments.properties
+missing module named xml.etree.cElementTree.register_namespace - imported by xml.etree.cElementTree, openpyxl.xml.namespace
+missing module named ElementC14N._serialize_c14n - imported by ElementC14N, xml.etree.ElementTree
+missing module named ElementC14N - imported by xml.etree.ElementTree
+missing module named java.Exception - imported by java, xml.sax._exceptions
+missing module named java - imported by xml.sax._exceptions
+missing module named _xmlplus - imported by xml
+missing module named xml.etree.cElementTree.ElementTree - imported by xml.etree.cElementTree, openpyxl.xml.functions
+missing module named xml.etree.cElementTree.SubElement - imported by xml.etree.cElementTree, openpyxl.xml.functions
+missing module named xml.etree.cElementTree.tostring - imported by xml.etree.cElementTree, openpyxl.xml.functions
+missing module named xml.etree.cElementTree.Element - imported by xml.etree.cElementTree, openpyxl.xml.functions
+missing module named xml.etree.cElementTree.QName - imported by xml.etree.cElementTree, openpyxl.xml.functions
+missing module named xml.etree.cElementTree.fromstring - imported by xml.etree.cElementTree, openpyxl.xml.functions
+missing module named xml.etree.cElementTree.iterparse - imported by xml.etree.cElementTree, openpyxl.xml.functions
+missing module named lxml.etree.ElementTree - imported by lxml.etree, openpyxl.xml.functions
+missing module named lxml.etree.SubElement - imported by lxml.etree, openpyxl.xml.functions
+missing module named lxml.etree.tostring - imported by lxml.etree, openpyxl.xml.functions
+missing module named lxml.etree.iterparse - imported by lxml.etree, openpyxl.xml.functions
+missing module named lxml.etree.Element - imported by lxml.etree, openpyxl.xml.functions
+missing module named lxml.etree.QName - imported by lxml.etree, openpyxl.xml.functions
+missing module named lxml.etree.fromstring - imported by lxml.etree, openpyxl.xml.functions
+missing module named lxml.etree.xmlfile - imported by lxml.etree, openpyxl.xml.functions
+missing module named lxml.etree.register_namespace - imported by lxml.etree, openpyxl.xml.functions
+missing module named lxml.etree.LXML_VERSION - imported by lxml.etree, openpyxl.xml
+missing module named openpyxl.comments.Comment - imported by openpyxl.comments, openpyxl.comments.reader
+missing module named openpyxl.workbook.DocumentProperties - imported by openpyxl.workbook, openpyxl.reader.workbook
+missing module named openpyxl.workbook.names.external.detect_external_links - imported by openpyxl.workbook.names.external, openpyxl.reader.excel
+missing module named tests.KEEP_VBA - imported by tests, openpyxl.reader.excel
+missing module named tests - imported by openpyxl.reader.excel
+missing module named sys.exc_info - imported by sys, openpyxl.reader.excel
+missing module named _sysconfigdata.build_time_vars - imported by _sysconfigdata, distutils.sysconfig
+missing module named _sysconfigdata - imported by distutils.sysconfig
+missing module named grp.getgrnam - imported by grp, shutil
+missing module named grp - imported by shutil, tarfile
+missing module named openpyxl.workbook.Workbook - imported by openpyxl.workbook, openpyxl.reader.excel, openpyxl
+missing module named openpyxl.chartsheet.Chartsheet - imported by openpyxl.chartsheet, openpyxl.writer.workbook, openpyxl.workbook.workbook
+missing module named openpyxl.drawing.drawing.Drawing - imported by openpyxl.drawing.drawing, openpyxl.drawing.image
+missing module named openpyxl.chart.area_chart.AreaChart - imported by openpyxl.chart.area_chart, openpyxl.chart.chartspace, openpyxl.chart
+missing module named openpyxl.chart.area_chart.AreaChart3D - imported by openpyxl.chart.area_chart, openpyxl.chart.chartspace, openpyxl.chart
+missing module named openpyxl.chart._chart.ChartBase - imported by openpyxl.chart._chart, openpyxl.chart.bar_chart, openpyxl.chart.bubble_chart, openpyxl.chart.line_chart, openpyxl.chart.pie_chart, openpyxl.chart.radar_chart, openpyxl.chart.scatter_chart, openpyxl.chart.stock_chart, openpyxl.chart.surface_chart, openpyxl.chart.area_chart, openpyxl.drawing.spreadsheet_drawing
+missing module named PIL.Image - imported by PIL, openpyxl.drawing.image
+missing module named PIL - imported by openpyxl.drawing.image
+missing module named Image - imported by openpyxl.drawing.image
+missing module named openpyxl.LXML - imported by openpyxl, openpyxl.xml.functions, openpyxl.writer.worksheet, openpyxl.writer.workbook
+missing module named _mysql.escape_dict - imported by _mysql, MySQLdb.converters
+missing module named _mysql.NULL - imported by _mysql, MySQLdb.converters
+missing module named _mysql.string_literal - imported by _mysql, MySQLdb.times, MySQLdb.converters
+missing module named _mysql.escape_sequence - imported by _mysql, MySQLdb.converters
+missing module named _mysql.escape - imported by _mysql, MySQLdb.converters

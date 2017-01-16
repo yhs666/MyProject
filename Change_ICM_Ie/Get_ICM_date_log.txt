@@ -1,0 +1,2 @@
+Wed, 09 Nov 2016 14:50:03:main.py[line:44] INFO Connect Redis OK!
+Wed, 09 Nov 2016 14:50:39:main.py[line:589] INFO  Get ICM Date  Run over!!

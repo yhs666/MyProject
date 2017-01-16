@@ -1,0 +1,142 @@
+Try using FcShell - A PowerShell based alternative to FcClient.
+Exit FcClient and run:
+FcShell "Get-Help about_FcShell"
+  -- Started: 2016-01-02 02:39:16Z Toolset Version: Azure-Compute_master_141840b.151028-1656 --
+Trying to connect to Fabric frontend: host=42.159.208.10 port=443 credType=Windows version=Version2 useDstsMode=PreferDsts
+Connected.
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version2 useDstsMode=PreferDsts
+Connected.
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version3 useDstsMode=PreferDsts
+Connected.
+
+VipRanges on LB Appliance e21def5e-8fa2-4a7b-a6c1-f4b1790dc69f: 
+-----------------------------------------------------------------
+    10.1.1.0-10.1.2.255
+    42.159.224.10-42.159.231.250
+
+
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version2 useDstsMode=PreferDsts
+Connected.
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version3 useDstsMode=PreferDsts
+Connected.
+
+VipRanges on LB Appliance f21def5e-8fa2-4a7b-a6c1-f4b1790dc69f: 
+-----------------------------------------------------------------
+    42.159.231.251-42.159.231.251
+    42.159.240.10-42.159.247.254
+    42.159.249.0-42.159.255.254
+
+
+
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version2 useDstsMode=PreferDsts
+Connected.
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version3 useDstsMode=PreferDsts
+Connected.
+
+VipRanges on LB Appliance 27c02827-2d84-4271-a876-56d1a26643c6: 
+-----------------------------------------------------------------
+    42.159.192.10-42.159.199.250
+    42.159.199.252-42.159.199.254
+    42.159.200.10-42.159.207.254
+
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version2 useDstsMode=PreferDsts
+Connected.
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version3 useDstsMode=PreferDsts
+Connected.
+
+VipRanges on LB Appliance 3ee36a42-7e61-492b-869d-48671db96925: 
+-----------------------------------------------------------------
+    42.159.132.10-42.159.135.254
+    42.159.136.10-42.159.139.254
+    42.159.141.10-42.159.141.254
+    42.159.142.10-42.159.143.254
+    42.159.144.10-42.159.147.254
+    42.159.148.10-42.159.151.254
+
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version2 useDstsMode=PreferDsts
+Connected.
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version3 useDstsMode=PreferDsts
+Connected.
+
+VipRanges on LB Appliance 69abed49-4efe-45e1-b934-2f9ff3113673: 
+-----------------------------------------------------------------
+    42.159.152.10-42.159.155.249
+    42.159.155.251-42.159.155.254
+    42.159.156.10-42.159.159.253
+
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version2 useDstsMode=PreferDsts
+Connected.
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version3 useDstsMode=PreferDsts
+Connected.
+
+VipRanges on LB Appliance 777f6e32-ea08-489b-a6f1-7a2feef00f7f: 
+-----------------------------------------------------------------
+    139.217.128.10-139.217.135.249
+    139.217.135.252-139.217.135.254
+    139.217.136.10-139.217.143.254
+    139.217.161.10-139.217.161.254
+
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version2 useDstsMode=PreferDsts
+Connected.
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version3 useDstsMode=PreferDsts
+Connected.
+
+VipRanges on LB Appliance f00403b3-a671-45a9-b29a-8a9c67a58acb: 
+-----------------------------------------------------------------
+    139.217.135.251-139.217.135.251
+    139.217.144.10-139.217.151.254
+    139.217.152.10-139.217.159.254
+
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version2 useDstsMode=PreferDsts
+Connected.
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version3 useDstsMode=PreferDsts
+Connected.
+
+VipRanges on LB Appliance fa4c86ef-1cc8-4c7a-8d75-73fadf034aa9: 
+-----------------------------------------------------------------
+    139.217.162.10-139.217.162.254
+    139.217.192.2-139.217.199.250
+    139.217.199.252-139.217.199.254
+    139.217.200.2-139.217.207.254
+
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version2 useDstsMode=PreferDsts
+Connected.
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version3 useDstsMode=PreferDsts
+Connected.
+
+VipRanges on LB Appliance 65cc6091-3c1c-47f0-a7fd-480705b010ef: 
+-----------------------------------------------------------------
+    42.159.159.254-42.159.159.254
+
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version2 useDstsMode=PreferDsts
+Connected.
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version3 useDstsMode=PreferDsts
+Connected.
+
+VipRanges on LB Appliance 86d1f4dc-364a-4699-8871-cf38b76ca8f3: 
+-----------------------------------------------------------------
+    139.217.135.250-139.217.135.250
+
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version2 useDstsMode=PreferDsts
+Connected.
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version3 useDstsMode=PreferDsts
+Connected.
+
+VipRanges on LB Appliance 480f0792-9e69-40f3-baf8-d8be075b947f: 
+-----------------------------------------------------------------
+    42.159.199.251-42.159.199.251
+
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version2 useDstsMode=PreferDsts
+Connected.
+Trying to connect to Fabric frontend via DIP: host=10.207.131.218 port=20007 CredType=Windows ApiVersion=Version3 useDstsMode=PreferDsts
+Connected.
+
+VipRanges on LB Appliance d54f3a47-a017-491c-a78c-06ebde500d3a: 
+-----------------------------------------------------------------
+    10.213.34.0-10.213.35.255
+    139.217.199.251-139.217.199.251
+
+
+  -- Elapsed Time: 00:01:11.4356397 --
+  -- Completed: 2016-01-02 02:40:27Z --
+  -- Action Succeeded -- 

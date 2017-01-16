@@ -1,0 +1,40 @@
+
+DateBase name: icm
+
+CREATE TABLE  `icm`.`icm_effort` (
+`id` INT( 11 ) NOT NULL AUTO_INCREMENT ,
+ `icm` VARCHAR( 10 ) NOT NULL ,
+ `username` VARCHAR( 50 ) NOT NULL ,
+ `operationtime` DATETIME NOT NULL ,
+ `effort` INT( 7 ) NOT NULL ,
+ `updatetime` VARCHAR( 20 ) NOT NULL ,
+PRIMARY KEY (  `id` ) ,
+KEY  `icm` (  `icm` ) ,
+KEY  `username` (  `username` ) ,
+KEY  `operationtime` (  `operationtime` ) ) ENGINE = INNODB DEFAULT CHARSET = utf8;
+
+
+
+
+ CREATE  TABLE  `icm`.`icm_detail` (  `ID` varchar( 10  )  NOT  NULL ,
+ `IncidentSeverity` varchar( 5  )  NOT  NULL ,
+ `Title` varchar( 2000  )  NOT  NULL ,
+ `Effort Time` varchar( 10  )  NOT  NULL ,
+ `SubType` varchar( 30  )  DEFAULT NULL ,
+ `EscalationOccured` varchar( 30  )  DEFAULT NULL ,
+ `Trigger` varchar( 50  )  DEFAULT NULL ,
+ `Azure Source` varchar( 30  )  DEFAULT NULL ,
+ `Created Date` varchar( 50  )  DEFAULT NULL ,
+ `Mitigated Date` varchar( 50  )  DEFAULT NULL ,
+ `Resolved Date` varchar( 50  )  DEFAULT NULL ,
+ `Ticket State` varchar( 15  )  DEFAULT NULL ,
+ `Sub Status` varchar( 15  )  DEFAULT NULL ,
+ `Owning Service` varchar( 50  )  DEFAULT NULL ,
+ `Owning Team` varchar( 50  )  DEFAULT NULL ,
+ `Impacted Services` varchar( 50  )  DEFAULT NULL ,
+ `Impacted Teams` varchar( 50  )  DEFAULT NULL ,
+ `Impacted Component` varchar( 50  )  DEFAULT NULL ,
+ `Service Responsible` varchar( 50  )  DEFAULT NULL ,
+ `Keywords` varchar( 100  )  DEFAULT NULL ,
+ `Current Summary` varchar( 3000  )  DEFAULT NULL ,
+ `updatetime` datetime  DEFAULT NULL  ) ENGINE  = InnoDB  DEFAULT CHARSET  = utf8;

@@ -1,0 +1,1470 @@
+Claiming fabric connection...
+...claimed!
+Claiming fabric connection...
+...claimed!
+Claiming fabric connection...
+...claimed!
+
+VFP Configuration for Blade: 940201c9-cbe2-4375-b77e-a28920415940
+
+VFP Configuration for Container: 00394303-04ef-4fa0-ac1d-7f5361f01884
+================================VFP Rule for Switch: External, Mac: 0017FA008215, Port: External_0017FA008215===============================
+
+
+ ITEM LIST
+===========
+
+LAYER : VFP_DEFAULT_METER_LAYER_STATELESS
+    Friendly name : VFP_DEFAULT_METER_LAYER_STATELESS
+    Priority : 10
+
+  GROUP : SYSTEM_AGENT_COMM_METER_GROUP_IN
+      Friendly name : SYSTEM_AGENT_COMM_METER_GROUP_IN
+      Priority : 100
+      Direction : IN
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : AgentComm
+        Friendly name : AgentComm
+        Priority : 4400
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            Source IP : 168.63.129.16/32
+        Flow TTL: 0
+
+  GROUP : MCF_METERING_GROUP_IN
+      Friendly name : MCF_METERING_GROUP_IN
+      Priority : 200
+      Direction : IN
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : UNBILLED_VNET_METERING_RULE
+        Friendly name : UNBILLED_VNET_METERING_RULE
+        Priority : 4100
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            Source IP : 240.0.0.0/4,224.0.0.0/4,25.0.0.0/8,127.0.0.0/8,10.0.0.0/8,0.0.0.0/8,100.64.0.0/10,172.16.0.0/12,198.18.0.0/15,192.168.0.0/16,169.254.0.0/16,192.0.2.0/24,168.63.129.16/32
+        Flow TTL: 0
+
+    RULE : SH3
+        Friendly name : SH3
+        Priority : 4300
+        Flags : 1 terminating 
+        Type : meter
+        Conditions:
+            Source IP : 40.126.64.0/20,40.126.80.0/21,40.126.88.0/28,40.126.88.32/27,40.126.88.80/28,40.126.88.96/27,40.126.88.128/25,40.126.89.0/24,40.126.90.0/23,40.126.92.0/22,40.126.96.0/19,139.217.128.0/19,139.217.160.0/26,139.217.160.64/27,139.217.160.128/28,139.217.161.0/24,139.217.162.0/24,139.217.192.0/20,139.219.160.0/19,139.219.192.0/18
+        Flow TTL: 0
+        Meter info : 0 Bytes, 0 Packets
+
+    RULE : BJB
+        Friendly name : BJB
+        Priority : 4400
+        Flags : 1 terminating 
+        Type : meter
+        Conditions:
+            Source IP : 40.125.128.0/17,42.159.0.0/26,42.159.0.144/28,42.159.4.0/22,42.159.8.0/21,42.159.16.0/25,42.159.17.0/24,42.159.18.0/23,42.159.20.0/22,42.159.24.0/21,42.159.65.0/25,42.159.80.0/20,42.159.96.0/19,139.217.0.0/19,139.217.32.0/24,139.217.40.0/27,139.217.40.32/28,139.219.0.0/20,139.219.32.0/19,139.219.64.0/18
+        Flow TTL: 0
+        Meter info : 0 Bytes, 0 Packets
+
+    RULE : SHA
+        Friendly name : SHA
+        Priority : 4400
+        Flags : 1 terminating 
+        Type : meter
+        Conditions:
+            Source IP : 42.159.129.0/24,42.159.130.0/26,42.159.130.144/28,42.159.132.0/22,42.159.136.0/22,42.159.140.0/25,42.159.141.0/24,42.159.142.0/23,42.159.144.0/20,139.219.128.0/20
+        Flow TTL: 0
+        Meter info : 157092 Bytes, 221 Packets
+
+    RULE : SH2
+        Friendly name : SH2
+        Priority : 4400
+        Flags : 1 terminating 
+        Type : meter
+        Conditions:
+            Source IP : 40.126.88.16/28,40.126.88.64/28,42.159.192.0/20,42.159.208.0/27,42.159.208.32/28,42.159.208.64/26,42.159.224.0/19
+        Flow TTL: 0
+        Meter info : 330 Bytes, 3 Packets
+
+    RULE : External
+        Friendly name : External
+        Priority : 4500
+        Flags : 1 terminating 
+        Type : meter
+        Conditions:
+            Source IP : 0.0.0.0/0
+        Flow TTL: 0
+        Meter info : 79518 Bytes, 516 Packets
+
+  GROUP : SYSTEM_METERING_CATCHALL_GROUP_IN
+      Friendly name : SYSTEM_METERING_CATCHALL_GROUP_IN
+      Priority : 300
+      Direction : IN
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : CatchAllIpv4MeterRule
+        Friendly name : CatchAllIpv4MeterRule
+        Priority : 4400
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+  GROUP : SYSTEM_AGENT_COMM_METER_GROUP_OUT
+      Friendly name : SYSTEM_AGENT_COMM_METER_GROUP_OUT
+      Priority : 100
+      Direction : OUT
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : AgentComm
+        Friendly name : AgentComm
+        Priority : 4400
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            Destination IP : 168.63.129.16/32
+        Flow TTL: 0
+
+  GROUP : MCF_METERING_GROUP_OUT
+      Friendly name : MCF_METERING_GROUP_OUT
+      Priority : 200
+      Direction : OUT
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : UNBILLED_VNET_METERING_RULE
+        Friendly name : UNBILLED_VNET_METERING_RULE
+        Priority : 4100
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            Destination IP : 240.0.0.0/4,224.0.0.0/4,25.0.0.0/8,127.0.0.0/8,10.0.0.0/8,0.0.0.0/8,100.64.0.0/10,172.16.0.0/12,198.18.0.0/15,192.168.0.0/16,169.254.0.0/16,192.0.2.0/24,168.63.129.16/32
+        Flow TTL: 0
+
+    RULE : SH3
+        Friendly name : SH3
+        Priority : 4300
+        Flags : 1 terminating 
+        Type : meter
+        Conditions:
+            Destination IP : 40.126.64.0/20,40.126.80.0/21,40.126.88.0/28,40.126.88.32/27,40.126.88.80/28,40.126.88.96/27,40.126.88.128/25,40.126.89.0/24,40.126.90.0/23,40.126.92.0/22,40.126.96.0/19,139.217.128.0/19,139.217.160.0/26,139.217.160.64/27,139.217.160.128/28,139.217.161.0/24,139.217.162.0/24,139.217.192.0/20,139.219.160.0/19,139.219.192.0/18
+        Flow TTL: 0
+        Meter info : 0 Bytes, 0 Packets
+
+    RULE : BJB
+        Friendly name : BJB
+        Priority : 4400
+        Flags : 1 terminating 
+        Type : meter
+        Conditions:
+            Destination IP : 40.125.128.0/17,42.159.0.0/26,42.159.0.144/28,42.159.4.0/22,42.159.8.0/21,42.159.16.0/25,42.159.17.0/24,42.159.18.0/23,42.159.20.0/22,42.159.24.0/21,42.159.65.0/25,42.159.80.0/20,42.159.96.0/19,139.217.0.0/19,139.217.32.0/24,139.217.40.0/27,139.217.40.32/28,139.219.0.0/20,139.219.32.0/19,139.219.64.0/18
+        Flow TTL: 0
+        Meter info : 0 Bytes, 0 Packets
+
+    RULE : SHA
+        Friendly name : SHA
+        Priority : 4400
+        Flags : 1 terminating 
+        Type : meter
+        Conditions:
+            Destination IP : 42.159.129.0/24,42.159.130.0/26,42.159.130.144/28,42.159.132.0/22,42.159.136.0/22,42.159.140.0/25,42.159.141.0/24,42.159.142.0/23,42.159.144.0/20,139.219.128.0/20
+        Flow TTL: 0
+        Meter info : 53495 Bytes, 299 Packets
+
+    RULE : SH2
+        Friendly name : SH2
+        Priority : 4400
+        Flags : 1 terminating 
+        Type : meter
+        Conditions:
+            Destination IP : 40.126.88.16/28,40.126.88.64/28,42.159.192.0/20,42.159.208.0/27,42.159.208.32/28,42.159.208.64/26,42.159.224.0/19
+        Flow TTL: 0
+        Meter info : 528 Bytes, 6 Packets
+
+    RULE : External
+        Friendly name : External
+        Priority : 4500
+        Flags : 1 terminating 
+        Type : meter
+        Conditions:
+            Destination IP : 0.0.0.0/0
+        Flow TTL: 0
+        Meter info : 87424 Bytes, 540 Packets
+
+  GROUP : SYSTEM_METERING_CATCHALL_GROUP_OUT
+      Friendly name : SYSTEM_METERING_CATCHALL_GROUP_OUT
+      Priority : 300
+      Direction : OUT
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : CatchAllIpv4MeterRule
+        Friendly name : CatchAllIpv4MeterRule
+        Priority : 4400
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+  GROUP : SYSTEM_METERING_IPV6_CATCHALL_GROUP_IN
+      Friendly name : SYSTEM_METERING_IPV6_CATCHALL_GROUP_IN
+      Priority : 300
+      Direction : IN
+      Type : IPv6
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : CatchAllIpv6MeterRule
+        Friendly name : CatchAllIpv6MeterRule
+        Priority : 4400
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+  GROUP : SYSTEM_METERING_IPV6_CATCHALL_GROUP_OUT
+      Friendly name : SYSTEM_METERING_IPV6_CATCHALL_GROUP_OUT
+      Priority : 300
+      Direction : OUT
+      Type : IPv6
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : CatchAllIpv6MeterRule
+        Friendly name : CatchAllIpv6MeterRule
+        Priority : 4400
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+LAYER : VFP_DEFAULT_LAYER_STATEFULL
+    Friendly name : VFP_DEFAULT_LAYER_STATEFULL
+    Priority : 20
+
+  GROUP : MCF_IPv4_ACL_GROUP_IN
+      Friendly name : MCF_IPv4_ACL_GROUP_IN
+      Priority : 100
+      Direction : IN
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : LoadBalancer
+        Friendly name : LoadBalancer
+        Priority : 4400
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            Protocols : 6
+            Destination ports : 16001-16001
+            Source IP : 13.75.91.122/32,23.96.197.167/32,40.74.127.199/32,40.76.26.205/32,40.85.224.13/32,40.86.224.13/32,40.87.151.17/32,40.115.1.228/32,40.122.207.154/32,40.124.12.90/32,40.124.12.188/32,40.126.240.131/32,40.127.81.104/32,104.40.58.103/32,104.41.41.154/32,104.208.242.89/32,104.211.97.94/32,104.211.165.31/32,104.211.231.207/32,207.46.225.165/32
+        Flow TTL: 0
+
+    RULE : DHCP_Reply
+        Friendly name : DHCP_Reply
+        Priority : 4400
+        Flags : 3 terminating stateful 
+        Type : allow
+        Conditions:
+            Protocols : 17
+            Destination ports : 68-68
+            Source IP : 139.217.161.0/24
+        Flow TTL: 255
+
+    RULE : Ping
+        Friendly name : Ping
+        Priority : 4400
+        Flags : 3 terminating stateful 
+        Type : allow
+        Conditions:
+            Protocols : 1
+            Source IP : 13.75.91.122/32,23.96.197.167/32,40.74.127.199/32,40.76.26.205/32,40.85.224.13/32,40.86.224.13/32,40.87.151.17/32,40.115.1.228/32,40.122.207.154/32,40.124.12.90/32,40.124.12.188/32,40.126.240.131/32,40.127.81.104/32,104.40.58.103/32,104.41.41.154/32,104.208.242.89/32,104.211.97.94/32,104.211.165.31/32,104.211.231.207/32,207.46.225.165/32
+        Flow TTL: 255
+
+  GROUP : DEFAULT_IPv4_ACL_GROUP_IN
+      Friendly name : DEFAULT_IPv4_ACL_GROUP_IN
+      Priority : 300
+      Direction : IN
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : ALLOW_NON_SYN_RULE
+        Friendly name : ALLOW_NON_SYN_RULE
+        Priority : 0
+        Flags : 5 terminating non_syn_only 
+        Type : allow
+        Conditions:
+            Protocols : 6
+        Flow TTL: 0
+
+    RULE : VNET_ALLOW_INCOMING_APIPA
+        Friendly name : VNET_ALLOW_INCOMING_APIPA
+        Priority : 1000
+        Flags : 3 terminating stateful 
+        Type : allow
+        Conditions:
+            Source IP : 169.254.0.0/16
+        Flow TTL: 255
+
+    RULE : DHCP_REPLY
+        Friendly name : DHCP_REPLY
+        Priority : 1000
+        Flags : 3 terminating stateful 
+        Type : allow
+        Conditions:
+            Protocols : 17
+            Destination ports : 68-68
+            Source IP : 168.63.129.16/32
+        Flow TTL: 255
+
+    RULE : BLOCK_GRE_IPinIP_AND_EVXLAN
+        Friendly name : BLOCK_GRE_IPinIP_AND_EVXLAN
+        Priority : 65532
+        Flags : 3 terminating stateful 
+        Type : block
+        Conditions:
+            Protocols : 4,47,251
+        Flow TTL: 255
+
+  GROUP : InboundEpAcl_00394303-04ef-4fa0-ac1d-7f5361f01884_Maxlinux_0017FA008215_IPv4_400
+      Friendly name : InboundEpAcl_00394303-04ef-4fa0-ac1d-7f5361f01884_Maxlinux_0017FA008215_IPv4_400
+      Priority : 400
+      Direction : IN
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : DefaultProbe_OpenLBPortRule
+        Friendly name : DefaultProbe_OpenLBPortRule
+        Priority : 0
+        Flags : 0 
+        Type : allow
+        Conditions:
+            Protocols : 6
+            Destination ports : 16001-16001
+            Source IP : 168.63.129.16
+        Flow TTL: 0
+
+    RULE : openInternalEndpoint_SystemAllowCNET_e0a2097c-e843-4c8e-a17b-e3f45d6743f0
+        Friendly name : openInternalEndpoint_SystemAllowCNET_e0a2097c-e843-4c8e-a17b-e3f45d6743f0
+        Priority : 1000
+        Flags : 2 stateful 
+        Type : allow
+        Conditions:
+            Source IP : 172.16.0.0/20,168.63.129.16/32
+        Flow TTL: 255
+
+    RULE : SSH_SystemAllowAll_39abaa7e-fd99-48ce-949c-39e6a8b5c08c
+        Friendly name : SSH_SystemAllowAll_39abaa7e-fd99-48ce-949c-39e6a8b5c08c
+        Priority : 1000
+        Flags : 0 
+        Type : allow
+        Conditions:
+            Protocols : 6
+            Destination ports : 22-22
+        Flow TTL: 0
+
+    RULE : openInternalEndpoint_SystemDenyAll_4a9290e0-d317-4925-8301-bfe0e1c89532
+        Friendly name : openInternalEndpoint_SystemDenyAll_4a9290e0-d317-4925-8301-bfe0e1c89532
+        Priority : 1002
+        Flags : 3 terminating stateful 
+        Type : block
+        Conditions:
+            <none>
+        Flow TTL: 255
+
+    RULE : WideOpenVNET
+        Friendly name : WideOpenVNET
+        Priority : 1003
+        Flags : 2 stateful 
+        Type : allow
+        Conditions:
+            Source IP : 172.16.0.0/20,168.63.129.16/32
+        Flow TTL: 255
+
+  GROUP : SPOOF_GUARD_ACL_GROUP_OUT
+      Friendly name : SPOOF_GUARD_ACL_GROUP_OUT
+      Priority : 50
+      Direction : OUT
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : GUARD_ALLOW_CA_OR_DSR_SRCIP_OUTGOING
+        Friendly name : GUARD_ALLOW_CA_OR_DSR_SRCIP_OUTGOING
+        Priority : 1000
+        Flags : 2 stateful 
+        Type : allow
+        Conditions:
+            Source IP : 172.16.0.5/32
+        Flow TTL: 255
+
+    RULE : BLOCK_ALL
+        Friendly name : BLOCK_ALL
+        Priority : 65535
+        Flags : 3 terminating stateful 
+        Type : block
+        Conditions:
+            <none>
+        Flow TTL: 255
+
+  GROUP : MCF_IPv4_ACL_GROUP_OUT
+      Friendly name : MCF_IPv4_ACL_GROUP_OUT
+      Priority : 100
+      Direction : OUT
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : BlockSubnetBroadcast
+        Friendly name : BlockSubnetBroadcast
+        Priority : 4000
+        Flags : 3 terminating stateful 
+        Type : block
+        Conditions:
+            Destination IP : 139.217.161.255/32
+        Flow TTL: 255
+
+    RULE : PublicAny
+        Friendly name : PublicAny
+        Priority : 4400
+        Flags : 2 stateful 
+        Type : allow
+        Conditions:
+            Destination IP : 1.0.0.0/8,2.0.0.0/7,4.0.0.0/6,8.0.0.0/7,11.0.0.0/8,12.0.0.0/6,16.0.0.0/5,24.0.0.0/8,26.0.0.0/7,28.0.0.0/6,32.0.0.0/3,64.0.0.0/3,96.0.0.0/6,100.0.0.0/10,100.128.0.0/9,101.0.0.0/8,102.0.0.0/7,104.0.0.0/5,112.0.0.0/5,120.0.0.0/6,124.0.0.0/7,126.0.0.0/8,128.0.0.0/3,160.0.0.0/5,169.0.0.0/9,169.128.0.0/10,169.192.0.0/11,169.224.0.0/12,169.240.0.0/13,169.248.0.0/14,169.252.0.0/15,169.255.0.0/16,170.0.0.0/7,172.0.0.0/12,172.32.0.0/11,172.64.0.0/10,172.128.0.0/9,173.0.0.0/8,174.0.0.0/7,176.0.0.0/4,192.0.0.0/23,192.0.3.0/24,192.0.4.0/22,192.0.8.0/21,192.0.16.0/20,192.0.32.0/19,192.0.64.0/18,192.0.128.0/17,192.1.0.0/16,192.2.0.0/15,192.4.0.0/14,192.8.0.0/13,192.16.0.0/12,192.32.0.0/11,192.64.0.0/10,192.128.0.0/11,192.160.0.0/13,192.169.0.0/16,192.170.0.0/15,192.172.0.0/14,192.176.0.0/12,192.192.0.0/10,193.0.0.0/8,194.0.0.0/7,196.0.0.0/7,198.0.0.0/12,198.16.0.0/15,198.20.0.0/14,198.24.0.0/13,198.32.0.0/11,198.64.0.0/10,198.128.0.0/9,199.0.0.0/8,200.0.0.0/5,208.0.0.0/4,168.128.0.0/9,168.64.0.0/10,168.0.0.0/11,168.32.0.0/12,168.48.0.0/13,168.56.0.0/14,168.60.0.0/15,168.62.0.0/16,168.63.0.0/17,168.63.192.0/18,168.63.160.0/19,168.63.144.0/20,168.63.136.0/21,168.63.132.0/22,168.63.130.0/23,168.63.128.0/24,168.63.129.128/25,168.63.129.64/26,168.63.129.32/27,168.63.129.0/28,168.63.129.24/29,168.63.129.20/30,168.63.129.18/31,168.63.129.17/32
+        Flow TTL: 255
+
+    RULE : OSActivation
+        Friendly name : OSActivation
+        Priority : 4400
+        Flags : 3 terminating stateful 
+        Type : allow
+        Conditions:
+            Protocols : 6
+            Destination ports : 1688-1688
+            Destination IP : 1.0.0.0/8,2.0.0.0/7,4.0.0.0/6,8.0.0.0/7,11.0.0.0/8,12.0.0.0/6,16.0.0.0/5,24.0.0.0/8,26.0.0.0/7,28.0.0.0/6,32.0.0.0/3,64.0.0.0/3,96.0.0.0/6,100.0.0.0/10,100.128.0.0/9,101.0.0.0/8,102.0.0.0/7,104.0.0.0/5,112.0.0.0/5,120.0.0.0/6,124.0.0.0/7,126.0.0.0/8,128.0.0.0/3,160.0.0.0/5,169.0.0.0/9,169.128.0.0/10,169.192.0.0/11,169.224.0.0/12,169.240.0.0/13,169.248.0.0/14,169.252.0.0/15,169.255.0.0/16,170.0.0.0/7,172.0.0.0/12,172.32.0.0/11,172.64.0.0/10,172.128.0.0/9,173.0.0.0/8,174.0.0.0/7,176.0.0.0/4,192.0.0.0/23,192.0.3.0/24,192.0.4.0/22,192.0.8.0/21,192.0.16.0/20,192.0.32.0/19,192.0.64.0/18,192.0.128.0/17,192.1.0.0/16,192.2.0.0/15,192.4.0.0/14,192.8.0.0/13,192.16.0.0/12,192.32.0.0/11,192.64.0.0/10,192.128.0.0/11,192.160.0.0/13,192.169.0.0/16,192.170.0.0/15,192.172.0.0/14,192.176.0.0/12,192.192.0.0/10,193.0.0.0/8,194.0.0.0/7,196.0.0.0/7,198.0.0.0/12,198.16.0.0/15,198.20.0.0/14,198.24.0.0/13,198.32.0.0/11,198.64.0.0/10,198.128.0.0/9,199.0.0.0/8,200.0.0.0/5,208.0.0.0/4,168.128.0.0/9,168.64.0.0/10,168.0.0.0/11,168.32.0.0/12,168.48.0.0/13,168.56.0.0/14,168.60.0.0/15,168.62.0.0/16,168.63.0.0/17,168.63.192.0/18,168.63.160.0/19,168.63.144.0/20,168.63.136.0/21,168.63.132.0/22,168.63.130.0/23,168.63.128.0/24,168.63.129.128/25,168.63.129.64/26,168.63.129.32/27,168.63.129.0/28,168.63.129.24/29,168.63.129.20/30,168.63.129.18/31,168.63.129.17/32
+        Flow TTL: 255
+
+    RULE : DHCP_Request
+        Friendly name : DHCP_Request
+        Priority : 4400
+        Flags : 3 terminating stateful 
+        Type : allow
+        Conditions:
+            Protocols : 17
+            Destination ports : 67-67
+            Destination IP : 255.255.255.255/32
+        Flow TTL: 255
+
+    RULE : Ping
+        Friendly name : Ping
+        Priority : 4400
+        Flags : 3 terminating stateful 
+        Type : allow
+        Conditions:
+            Protocols : 1
+            Destination IP : 13.75.91.122/32,23.96.197.167/32,40.74.127.199/32,40.76.26.205/32,40.85.224.13/32,40.86.224.13/32,40.87.151.17/32,40.115.1.228/32,40.122.207.154/32,40.124.12.90/32,40.124.12.188/32,40.126.240.131/32,40.127.81.104/32,104.40.58.103/32,104.41.41.154/32,104.208.242.89/32,104.211.97.94/32,104.211.165.31/32,104.211.231.207/32,207.46.225.165/32
+        Flow TTL: 255
+
+  GROUP : DEFAULT_IPv4_ACL_GROUP_OUT
+      Friendly name : DEFAULT_IPv4_ACL_GROUP_OUT
+      Priority : 200
+      Direction : OUT
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : ALLOW_NON_SYN_RULE
+        Friendly name : ALLOW_NON_SYN_RULE
+        Priority : 0
+        Flags : 5 terminating non_syn_only 
+        Type : allow
+        Conditions:
+            Protocols : 6
+        Flow TTL: 0
+
+    RULE : DHCP_REQUEST
+        Friendly name : DHCP_REQUEST
+        Priority : 1000
+        Flags : 3 terminating stateful 
+        Type : allow
+        Conditions:
+            Protocols : 17
+            Destination ports : 67-67
+            Destination IP : 255.255.255.255/32
+        Flow TTL: 255
+
+    RULE : VNET_DNS_REQUEST
+        Friendly name : VNET_DNS_REQUEST
+        Priority : 1000
+        Flags : 3 terminating stateful 
+        Type : allow
+        Conditions:
+            Protocols : 17,6
+            Destination ports : 53-53
+            Destination IP : 168.63.129.16/32
+        Flow TTL: 255
+
+    RULE : WIRE_SERVER_REQUEST
+        Friendly name : WIRE_SERVER_REQUEST
+        Priority : 1000
+        Flags : 3 terminating stateful 
+        Type : allow
+        Conditions:
+            Protocols : 6
+            Destination ports : 80-80
+            Destination IP : 168.63.129.16/32
+            Source IP : 172.16.0.5/32
+        Flow TTL: 255
+
+    RULE : GUEST_AGENT_HOSTPLUGIN_REQUEST
+        Friendly name : GUEST_AGENT_HOSTPLUGIN_REQUEST
+        Priority : 1000
+        Flags : 3 terminating stateful 
+        Type : allow
+        Conditions:
+            Protocols : 6
+            Destination ports : 32526-32526
+            Destination IP : 168.63.129.16/32
+            Source IP : 172.16.0.5/32
+        Flow TTL: 255
+
+    RULE : METADATA_SERVER_REQUEST
+        Friendly name : METADATA_SERVER_REQUEST
+        Priority : 1000
+        Flags : 3 terminating stateful 
+        Type : allow
+        Conditions:
+            Protocols : 6
+            Destination ports : 80-80
+            Destination IP : 169.254.169.254/32
+        Flow TTL: 255
+
+    RULE : VNET_DNS_WIRE_SERVER
+        Friendly name : VNET_DNS_WIRE_SERVER
+        Priority : 1000
+        Flags : 3 terminating stateful 
+        Type : allow
+        Conditions:
+            Protocols : 17,6
+            Destination ports : 53-53
+            Destination IP : 168.63.129.16/32
+        Flow TTL: 255
+
+    RULE : VNET_BLOCK_WIRE_SERVER
+        Friendly name : VNET_BLOCK_WIRE_SERVER
+        Priority : 65532
+        Flags : 3 terminating stateful 
+        Type : block
+        Conditions:
+            Destination IP : 168.63.129.16/32
+        Flow TTL: 255
+
+    RULE : VNET_BLOCK_APIPA
+        Friendly name : VNET_BLOCK_APIPA
+        Priority : 65532
+        Flags : 3 terminating stateful 
+        Type : block
+        Conditions:
+            Destination IP : 169.254.0.0/16
+        Flow TTL: 255
+
+    RULE : BLOCK_GRE_IPinIP_AND_EVXLAN
+        Friendly name : BLOCK_GRE_IPinIP_AND_EVXLAN
+        Priority : 65532
+        Flags : 3 terminating stateful 
+        Type : block
+        Conditions:
+            Protocols : 4,47,251
+        Flow TTL: 255
+
+    RULE : VNET_BLOCK_DNA_CA_SERVERS
+        Friendly name : VNET_BLOCK_DNA_CA_SERVERS
+        Priority : 65532
+        Flags : 3 terminating stateful 
+        Type : block
+        Conditions:
+            Destination IP : 172.16.0.2/32,172.16.0.3/32
+        Flow TTL: 255
+
+    RULE : VNET_WIDE_OPEN_CNET
+        Friendly name : VNET_WIDE_OPEN_CNET
+        Priority : 65534
+        Flags : 2 stateful 
+        Type : allow
+        Conditions:
+            Destination IP : 172.16.0.0/20,168.63.129.16/32
+        Flow TTL: 255
+
+    RULE : VNET_WIDE_OPEN_INTERNET
+        Friendly name : VNET_WIDE_OPEN_INTERNET
+        Priority : 65534
+        Flags : 2 stateful 
+        Type : allow
+        Conditions:
+            Destination IP : 32.0.0.0/3,4.0.0.0/6,2.0.0.0/7,1.0.0.0/8,12.0.0.0/6,8.0.0.0/7,11.0.0.0/8,64.0.0.0/3,112.0.0.0/5,120.0.0.0/6,124.0.0.0/7,126.0.0.0/8,128.0.0.0/3,176.0.0.0/4,160.0.0.0/5,170.0.0.0/7,168.0.0.0/8,169.0.0.0/9,169.128.0.0/10,169.192.0.0/11,169.224.0.0/12,169.240.0.0/13,169.248.0.0/14,169.252.0.0/15,169.255.0.0/16,174.0.0.0/7,173.0.0.0/8,172.128.0.0/9,172.64.0.0/10,172.32.0.0/11,172.0.0.0/12,208.0.0.0/4,200.0.0.0/5,194.0.0.0/7,193.0.0.0/8,192.64.0.0/10,192.32.0.0/11,192.16.0.0/12,192.8.0.0/13,192.4.0.0/14,192.2.0.0/15,192.1.0.0/16,192.0.128.0/17,192.0.64.0/18,192.0.32.0/19,192.0.16.0/20,192.0.8.0/21,192.0.4.0/22,192.0.0.0/23,192.0.3.0/24,192.192.0.0/10,192.128.0.0/11,192.176.0.0/12,192.160.0.0/13,192.172.0.0/14,192.170.0.0/15,192.169.0.0/16,196.0.0.0/7,199.0.0.0/8,198.128.0.0/9,198.64.0.0/10,198.32.0.0/11,198.0.0.0/12,198.24.0.0/13,198.20.0.0/14,198.16.0.0/15,104.0.0.0/5,96.0.0.0/6,102.0.0.0/7,101.0.0.0/8,100.128.0.0/9,100.0.0.0/10,16.0.0.0/5,28.0.0.0/6,26.0.0.0/7,24.0.0.0/8
+        Flow TTL: 255
+
+    RULE : BLOCK_ALL
+        Friendly name : BLOCK_ALL
+        Priority : 65535
+        Flags : 3 terminating stateful 
+        Type : block
+        Conditions:
+            <none>
+        Flow TTL: 255
+
+LAYER : VFP_DEFAULT_TRANSPOSITION_LAYER_STATELESS
+    Friendly name : VFP_DEFAULT_TRANSPOSITION_LAYER_STATELESS
+    Priority : 27
+
+  GROUP : VFP_GROUP_TRANSP_IPV4_IN_V2
+      Friendly name : VFP_GROUP_TRANSP_IPV4_IN_V2
+      Priority : 100
+      Direction : IN
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : TRANSPOSE_METADATA_SERVER_INCOMING
+        Friendly name : TRANSPOSE_METADATA_SERVER_INCOMING
+        Priority : 1000
+        Flags : 1 terminating 
+        Type : transposition
+        Conditions:
+            Protocols : 6
+            Source ports : 8080-8080
+            Source IP : 168.63.129.16/32
+        Flow TTL: 0
+        Transposition:
+        Modify:
+            Source MAC: 00-00-00-00-00-00
+            Destination MAC: 00-00-00-00-00-00
+            Source IP: 169.254.169.254
+            Source Port: 80
+
+  GROUP : VFP_GROUP_TRANSP_CATCHALL_GROUP_IN
+      Friendly name : VFP_GROUP_TRANSP_CATCHALL_GROUP_IN
+      Priority : 200
+      Direction : IN
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : CatchAllIpv4MeterRule
+        Friendly name : CatchAllIpv4MeterRule
+        Priority : 4400
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+  GROUP : VFP_GROUP_TRANSP_IPV4_OUT_V2
+      Friendly name : VFP_GROUP_TRANSP_IPV4_OUT_V2
+      Priority : 100
+      Direction : OUT
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : TRANSPOSE_METADATA_SERVER_OUTGOING
+        Friendly name : TRANSPOSE_METADATA_SERVER_OUTGOING
+        Priority : 1000
+        Flags : 1 terminating 
+        Type : transposition
+        Conditions:
+            Protocols : 6
+            Destination ports : 80-80
+            Destination IP : 169.254.169.254/32
+        Flow TTL: 0
+        Transposition:
+        Modify:
+            Source MAC: 00-00-00-00-00-00
+            Destination MAC: 00-00-00-00-00-00
+            Destination IP: 168.63.129.16
+            DestinationPort Port: 8080
+
+  GROUP : VFP_GROUP_TRANSP_CATCHALL_GROUP_OUT
+      Friendly name : VFP_GROUP_TRANSP_CATCHALL_GROUP_OUT
+      Priority : 200
+      Direction : OUT
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : CatchAllIpv4MeterRule
+        Friendly name : CatchAllIpv4MeterRule
+        Priority : 4400
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+  GROUP : VFP_GROUP_TRANSP_IPV6_CATCHALL_GROUP_IN
+      Friendly name : VFP_GROUP_TRANSP_IPV6_CATCHALL_GROUP_IN
+      Priority : 300
+      Direction : IN
+      Type : IPv6
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : CatchAllIpv6MeterRule
+        Friendly name : CatchAllIpv6MeterRule
+        Priority : 4400
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+  GROUP : VFP_GROUP_TRANSP_IPV6_CATCHALL_GROUP_OUT
+      Friendly name : VFP_GROUP_TRANSP_IPV6_CATCHALL_GROUP_OUT
+      Priority : 300
+      Direction : OUT
+      Type : IPv6
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : CatchAllIpv6MeterRule
+        Friendly name : CatchAllIpv6MeterRule
+        Priority : 4400
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+LAYER : VNET_VFP_DEFAULT_LAYER_STATELESS
+    Friendly name : VNET_VFP_DEFAULT_LAYER_STATELESS
+    Priority : 30
+
+  GROUP : VNET_VFP_GROUP_IPV4_IN_V2
+      Friendly name : VNET_VFP_GROUP_IPV4_IN_V2
+      Priority : 100
+      Direction : IN
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : VNET_VFP_RULE_IPV4_IN_DECAP
+        Friendly name : VNET_VFP_RULE_IPV4_IN_DECAP
+        Priority : 200
+        Flags : 1025 terminating 
+        Type : mapdecap
+        Conditions:
+            Protocols : 47
+        Flow TTL: 0
+        Rule Data:
+        Map space : VNET_VFP_DEFAULT_MAP_SPACE
+
+    RULE : VNET_VFP_RULE_IPV4_IN_DECAP_NO_GRE_KEY
+        Friendly name : VNET_VFP_RULE_IPV4_IN_DECAP_NO_GRE_KEY
+        Priority : 300
+        Flags : 1025 terminating 
+        Type : mapdecap
+        Conditions:
+            Protocols : 47
+        Flow TTL: 0
+        Rule Data:
+        Map space : VNET_VFP_DEFAULT_MAP_SPACE
+
+    RULE : VNET_VFP_RULE_IPV4_IN_DROP_GRE
+        Friendly name : VNET_VFP_RULE_IPV4_IN_DROP_GRE
+        Priority : 400
+        Flags : 1 terminating 
+        Type : block
+        Conditions:
+            Protocols : 47
+        Flow TTL: 0
+
+    RULE : VNET_VFP_RULE_IPV4_IN_FULL_REWRITE_1
+        Friendly name : VNET_VFP_RULE_IPV4_IN_FULL_REWRITE_1
+        Priority : 500
+        Flags : 1 terminating 
+        Type : mapin
+        Conditions:
+            Source IP : 10.0.0.0/8,100.64.0.0/10,25.0.0.0/8
+            Destination IP : 10.212.118.34/32
+        Flow TTL: 0
+        Map space : VNET_VFP_DEFAULT_MAP_SPACE
+        Rewrite Address: 172.16.0.5
+    RULE : VNET_VFP_RULE_IPV4_IN_DROP_PUBLIC_CA
+        Friendly name : VNET_VFP_RULE_IPV4_IN_DROP_PUBLIC_CA
+        Priority : 600
+        Flags : 1 terminating 
+        Type : block
+        Conditions:
+            Source IP : 172.16.0.0/20
+        Flow TTL: 0
+
+    RULE : VNET_VFP_RULE_IPV4_IN_PARTIAL_REWRITE_1
+        Friendly name : VNET_VFP_RULE_IPV4_IN_PARTIAL_REWRITE_1
+        Priority : 700
+        Flags : 1 terminating 
+        Type : transposition
+        Conditions:
+            Destination IP : 10.212.118.34/32
+        Flow TTL: 0
+        Transposition:
+        Modify:
+            Source MAC: 12-34-56-78-9A-BC
+            Destination MAC: 00-00-00-00-00-00
+            Destination IP: 172.16.0.5
+
+    RULE : VNET_VFP_RULE_IPV4_IN_MAC_REWRITE
+        Friendly name : VNET_VFP_RULE_IPV4_IN_MAC_REWRITE
+        Priority : 800
+        Flags : 1 terminating 
+        Type : mapmacin
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+  GROUP : VNET_VFP_GROUP_IPV4_OUT_INFRASTRUCTURE_V2
+      Friendly name : VNET_VFP_GROUP_IPV4_OUT_INFRASTRUCTURE_V2
+      Priority : 100
+      Direction : OUT
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : VNET_VFP_RULE_IPV4_OUT_FULL_REWRITE_1
+        Friendly name : VNET_VFP_RULE_IPV4_OUT_FULL_REWRITE_1
+        Priority : 200
+        Flags : 1 terminating 
+        Type : mapout
+        Conditions:
+            Destination IP : 168.63.129.16/32,172.16.0.1/32,172.16.0.2/32,172.16.0.3/32,169.254.0.0/16
+            Source IP : 172.16.0.5/32
+        Flow TTL: 0
+        Map space : VNET_VFP_DEFAULT_MAP_SPACE
+        Rewrite Address: 10.212.118.34
+  GROUP : VNET_VFP_GROUP_IPV4_OUT_LPM_V1
+      Friendly name : VNET_VFP_GROUP_IPV4_OUT_LPM_V1
+      Priority : 200
+      Direction : OUT
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Longest prefix match on Destination IP
+
+    RULE : RouteTargetVnet_0
+        Friendly name : RouteTargetVnet_0
+        Priority : 512
+        Flags : 1 terminating 
+        Type : mapencap
+        Conditions:
+            Destination IP : 172.16.0.0/20
+            Source IP : 172.16.0.5/32
+        Flow TTL: 0
+        MSS delta: 42,0
+        Rule Data:
+        Map space : VNET_VFP_DEFAULT_MAP_SPACE
+        GRE key : 0
+        Encap Type: IP-in-GRE
+        Encap Source IP : 10.212.118.34
+
+    RULE : RouteTargetNull_4
+        Friendly name : RouteTargetNull_4
+        Priority : 516
+        Flags : 1 terminating 
+        Type : block
+        Conditions:
+            Destination IP : 192.168.0.0/16
+        Flow TTL: 0
+
+    RULE : RouteTargetNull_3
+        Friendly name : RouteTargetNull_3
+        Priority : 520
+        Flags : 1 terminating 
+        Type : block
+        Conditions:
+            Destination IP : 172.16.0.0/12
+        Flow TTL: 0
+
+    RULE : RouteTargetNull_2
+        Friendly name : RouteTargetNull_2
+        Priority : 522
+        Flags : 1 terminating 
+        Type : block
+        Conditions:
+            Destination IP : 100.64.0.0/10
+        Flow TTL: 0
+
+    RULE : RouteTargetNull_0
+        Friendly name : RouteTargetNull_0
+        Priority : 524
+        Flags : 1 terminating 
+        Type : block
+        Conditions:
+            Destination IP : 10.0.0.0/8
+        Flow TTL: 0
+
+    RULE : RouteTargetNull_1
+        Friendly name : RouteTargetNull_1
+        Priority : 524
+        Flags : 1 terminating 
+        Type : block
+        Conditions:
+            Destination IP : 25.0.0.0/8
+        Flow TTL: 0
+
+    RULE : RouteTargetInternet_0
+        Friendly name : RouteTargetInternet_0
+        Priority : 532
+        Flags : 1 terminating 
+        Type : transposition
+        Conditions:
+            Destination IP : 0.0.0.0/0
+            Source IP : 172.16.0.5/32
+        Flow TTL: 0
+        Transposition:
+        Modify:
+            Source MAC: 00-00-00-00-00-00
+            Destination MAC: 00-00-00-00-00-00
+            Source IP: 10.212.118.34
+
+  GROUP : VNET_VFP_GROUP_IPV6_IN_V2
+      Friendly name : VNET_VFP_GROUP_IPV6_IN_V2
+      Priority : 100
+      Direction : IN
+      Type : IPv6
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : VNET_VFP_RULE_IPV6_IN_FULL_ALLOW
+        Friendly name : VNET_VFP_RULE_IPV6_IN_FULL_ALLOW
+        Priority : 100
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+  GROUP : VNET_VFP_GROUP_IPV6_OUT_V2
+      Friendly name : VNET_VFP_GROUP_IPV6_OUT_V2
+      Priority : 100
+      Direction : OUT
+      Type : IPv6
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : VNET_VFP_RULE_IPV6_OUT_FULL_ALLOW
+        Friendly name : VNET_VFP_RULE_IPV6_OUT_FULL_ALLOW
+        Priority : 100
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+LAYER : SLB_NAT_LAYER
+    Friendly name : SLB_NAT_LAYER
+    Flags : 0x1 Default Allow 
+    Priority : 50
+
+  GROUP : SLB_GROUP_NAT_IPv4_IN
+      Friendly name : SLB_GROUP_NAT_IPv4_IN
+      Priority : 100
+      Direction : IN
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : 
+        Friendly name : SLB_DNAT_RULE
+        Priority : 0
+        Flags : 11 terminating stateful tracking_tcp 
+        Type : nat
+        Conditions:
+            Protocols : 6
+            Destination IP : 42.159.195.141
+            Destination ports : 22
+        Flow TTL: 240
+        MSS delta: 0,20
+        NAT info : Dest:10.212.118.34:22
+
+    RULE : SLB_ALLOW_DIP_STATEFUL
+        Friendly name : SLB_ALLOW_DIP_STATEFUL
+        Priority : 65485
+        Flags : 11 terminating stateful tracking_tcp 
+        Type : allow
+        Conditions:
+            Destination IP : 10.212.118.34
+        Flow TTL: 240
+
+    RULE : 
+        Friendly name : SLB_DEFAULT_RULE
+        Priority : 65535
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+  GROUP : SLB_GROUP_NAT_IPv4_OUT
+      Friendly name : SLB_GROUP_NAT_IPv4_OUT
+      Priority : 300
+      Direction : OUT
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : 
+        Friendly name : SLB_SNAT_RULE
+        Priority : 1
+        Flags : 3 terminating stateful 
+        Type : dynnat
+        Conditions:
+            Protocols : 17
+            Destination IP : 10.254.32.0-10.254.47.255
+            Source IP : 10.212.118.34
+        Flow TTL: 240
+        MSS delta: 20,0
+        Type : Source NAT;         NAT pool : SLB_IPv4_UDP_CONENAT
+
+    RULE : 
+        Friendly name : SLB_SNAT_RULE
+        Priority : 2
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            Protocols : 17
+            Destination IP : 25.0.0.0-25.255.255.255,100.64.0.0-100.127.255.255,10.0.0.0-10.255.255.255,224.0.0.0-239.255.255.255
+            Source IP : 10.212.118.34
+        Flow TTL: 240
+        MSS delta: 20,0
+
+    RULE : 
+        Friendly name : SLB_SNAT_RULE
+        Priority : 3
+        Flags : 3 terminating stateful 
+        Type : dynnat
+        Conditions:
+            Protocols : 17
+            Destination IP : 0.0.0.0-255.255.255.255
+            Source IP : 10.212.118.34
+        Flow TTL: 240
+        MSS delta: 20,0
+        Type : Source NAT;         NAT pool : SLB_IPv4_UDP_CONENAT
+
+    RULE : 
+        Friendly name : SLB_SNAT_RULE
+        Priority : 4
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            Protocols : 6
+            Destination IP : 10.20.8.199,42.159.199.254,40.126.88.72-40.126.88.73,40.126.88.74,40.126.88.76,40.126.88.152-40.126.88.153,40.126.88.154,40.126.88.156,40.126.88.168-40.126.88.169,40.126.88.170,40.126.88.172,42.159.130.14,42.159.140.14-42.159.140.15,42.159.140.16,42.159.140.18,42.159.140.46-42.159.140.47,42.159.140.48,42.159.140.50,42.159.208.78-42.159.208.79,42.159.208.80,42.159.208.82,42.159.208.110-42.159.208.111,42.159.208.112,42.159.208.114,139.217.160.38-139.217.160.39,139.217.160.40,139.217.160.42
+            Source IP : 10.212.118.34
+        Flow TTL: 240
+        MSS delta: 20,0
+
+    RULE : 
+        Friendly name : SLB_SNAT_RULE
+        Priority : 5
+        Flags : 3 terminating stateful 
+        Type : dynnat
+        Conditions:
+            Protocols : 6
+            Destination IP : 10.254.32.0-10.254.47.255
+            Source IP : 10.212.118.34
+        Flow TTL: 240
+        MSS delta: 20,0
+        Type : Source NAT;         NAT pool : SLB_IPv4_TCP
+
+    RULE : 
+        Friendly name : SLB_SNAT_RULE
+        Priority : 6
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            Protocols : 6
+            Destination IP : 25.0.0.0-25.255.255.255,100.64.0.0-100.127.255.255,10.0.0.0-10.255.255.255,224.0.0.0-239.255.255.255
+            Source IP : 10.212.118.34
+        Flow TTL: 240
+        MSS delta: 20,0
+
+    RULE : 
+        Friendly name : SLB_SNAT_RULE
+        Priority : 7
+        Flags : 3 terminating stateful 
+        Type : dynnat
+        Conditions:
+            Protocols : 6
+            Destination IP : 0.0.0.0-255.255.255.255
+            Source IP : 10.212.118.34
+        Flow TTL: 240
+        MSS delta: 20,0
+        Type : Source NAT;         NAT pool : SLB_IPv4_TCP
+
+    RULE : 
+        Friendly name : SLB_DEFAULT_RULE
+        Priority : 65535
+        Flags : 3 terminating stateful 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 240
+
+  GROUP : SLB_GROUP_NAT_IPv6_IN
+      Friendly name : SLB_GROUP_NAT_IPv6_IN
+      Priority : 200
+      Direction : IN
+      Type : IPv6
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : 
+        Friendly name : SLB_DEFAULT_RULE
+        Priority : 65535
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+  GROUP : SLB_GROUP_NAT_IPv6_OUT
+      Friendly name : SLB_GROUP_NAT_IPv6_OUT
+      Priority : 400
+      Direction : OUT
+      Type : IPv6
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : 
+        Friendly name : SLB_DEFAULT_RULE
+        Priority : 65535
+        Flags : 3 terminating stateful 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 240
+
+LAYER : SLB_DECAP_LAYER_STATEFUL
+    Friendly name : SLB_DECAP_LAYER_STATEFUL
+    Flags : 0x1, Default Allow 
+    Priority : 100
+
+  GROUP : SLB_GROUP_DECAP_IPv4_IN
+      Friendly name : SLB_GROUP_DECAP_IPv4_IN
+      Priority : 100
+      Direction : IN
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : 
+        Friendly name : SLB_DEFAULT_GRE_RULE
+        Priority : 1
+        Flags : 1 terminating 
+        Type : decap
+        Conditions:
+            Protocols : 47
+            GRE Key : 1
+        Flow TTL: 0
+
+    RULE : 
+        Friendly name : SLB_DEFAULT_RULE
+        Priority : 1
+        Flags : 1 terminating 
+        Type : decap
+        Conditions:
+            Protocols : 4
+        Flow TTL: 0
+
+    RULE : SLB_REDIRECT_RULE_1
+        Friendly name : SLB_REDIRECT_RULE_1
+        Priority : 100
+        Flags : 1 terminating 
+        Type : redirect
+        Conditions:
+            Protocols : 47
+            GRE Key : 255
+            Destination IP : 10.212.118.34
+            Source IP : 40.126.71.254,40.126.79.254,40.126.88.62,40.126.88.78,40.126.88.126,40.126.88.158,40.126.103.254,40.126.111.254,42.159.130.14,42.159.135.254,42.159.140.30,42.159.140.94,42.159.155.250,42.159.155.254,42.159.159.254,42.159.199.251,42.159.199.254,42.159.208.28,42.159.208.94,42.159.231.251,42.159.231.254,139.217.135.250,139.217.135.251,139.217.135.254,139.217.160.12,139.217.160.46,139.217.160.94,139.217.199.251,139.217.199.254,139.219.175.254,139.219.183.254,139.219.215.254,139.219.223.254
+        Flow TTL: 240
+        Rule Data:
+        GRE key : 0
+        Encap Type: IP-in-IP
+
+    RULE : 
+        Friendly name : SLB_DEFAULT_RULE
+        Priority : 65535
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+  GROUP : SLB_GROUP_DECAP_IPv4_OUT
+      Friendly name : SLB_GROUP_DECAP_IPv4_OUT
+      Priority : 300
+      Direction : OUT
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : 
+        Friendly name : SLB_DEFAULT_RULE
+        Priority : 65535
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+  GROUP : SLB_GROUP_DECAP_IPv6_IN
+      Friendly name : SLB_GROUP_DECAP_IPv6_IN
+      Priority : 200
+      Direction : IN
+      Type : IPv6
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : 
+        Friendly name : SLB_DEFAULT_GRE_RULE
+        Priority : 1
+        Flags : 1 terminating 
+        Type : decap
+        Conditions:
+            Protocols : 47
+            GRE Key : 1
+        Flow TTL: 0
+
+    RULE : 
+        Friendly name : SLB_DEFAULT_RULE
+        Priority : 1
+        Flags : 1 terminating 
+        Type : decap
+        Conditions:
+            Protocols : 41
+        Flow TTL: 0
+
+    RULE : 
+        Friendly name : SLB_DEFAULT_RULE
+        Priority : 65535
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+  GROUP : SLB_GROUP_DECAP_IPv6_OUT
+      Friendly name : SLB_GROUP_DECAP_IPv6_OUT
+      Priority : 400
+      Direction : OUT
+      Type : IPv6
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : 
+        Friendly name : SLB_DEFAULT_RULE
+        Priority : 65535
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+LAYER : VFP_NEXT_HOP_MAC_LOOKUP_LAYER_STATELESS
+    Friendly name : VFP_NEXT_HOP_MAC_LOOKUP_LAYER_STATELESS
+    Priority : 1000
+
+  GROUP : DEFAULT_IPV4_NEXT_HOP_MAC_LOOKUP_ALLOW_ALL_IN
+      Friendly name : DEFAULT_IPV4_NEXT_HOP_MAC_LOOKUP_ALLOW_ALL_IN
+      Priority : 100
+      Direction : IN
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : INCOMING_IPV4_ALLOW_ALL_RULE
+        Friendly name : INCOMING_IPV4_ALLOW_ALL_RULE
+        Priority : 1000
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+  GROUP : DEFAULT_IPV4_HLIP_GUARD_OUT
+      Friendly name : DEFAULT_IPV4_HLIP_GUARD_OUT
+      Priority : 50
+      Direction : OUT
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : ALLOW_HLIP_TO_HOST_IPV4_RULE
+        Friendly name : ALLOW_HLIP_TO_HOST_IPV4_RULE
+        Priority : 100
+        Flags : 0 
+        Type : allow
+        Conditions:
+            Destination IP : 10.212.118.80/32
+            Source IP : 169.254.0.0/16
+        Flow TTL: 0
+
+    RULE : BLOCK_HLIP_TO_EXTERNAL_IPV4_RULE
+        Friendly name : BLOCK_HLIP_TO_EXTERNAL_IPV4_RULE
+        Priority : 200
+        Flags : 1 terminating 
+        Type : block
+        Conditions:
+            Source IP : 169.254.0.0/16
+        Flow TTL: 0
+
+    RULE : OUTGOING_IPV4_ALLOW_ALL_RULE
+        Friendly name : OUTGOING_IPV4_ALLOW_ALL_RULE
+        Priority : 1000
+        Flags : 0 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+  GROUP : DEFAULT_IPV4_NEXT_HOP_MAC_LOOKUP_OUT
+      Friendly name : DEFAULT_IPV4_NEXT_HOP_MAC_LOOKUP_OUT
+      Priority : 200
+      Direction : OUT
+      Type : IPv4
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : MAC_REWRITE_OUTGOING_IPV4_RULE
+        Friendly name : MAC_REWRITE_OUTGOING_IPV4_RULE
+        Priority : 500
+        Flags : 1 terminating 
+        Type : mapmacout
+        Conditions:
+            Destination IP : 10.212.118.34/32
+        Flow TTL: 0
+
+    RULE : MAC_LOOKUP_OUTGOING_IPV4_RULE
+        Friendly name : MAC_LOOKUP_OUTGOING_IPV4_RULE
+        Priority : 1000
+        Flags : 1 terminating 
+        Type : paroute
+        Conditions:
+            <none>
+        Flow TTL: 0
+        Rule Data:
+        Using default compartment
+        Cache pruning threshold: 1
+        Cache pruning timeout: 30 seconds
+
+  GROUP : DEFAULT_IPV6_NEXT_HOP_MAC_LOOKUP_ALLOW_ALL_IN
+      Friendly name : DEFAULT_IPV6_NEXT_HOP_MAC_LOOKUP_ALLOW_ALL_IN
+      Priority : 200
+      Direction : IN
+      Type : IPv6
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : INCOMING_IPV6_ALLOW_ALL_RULE
+        Friendly name : INCOMING_IPV6_ALLOW_ALL_RULE
+        Priority : 1000
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+  GROUP : DEFAULT_IPV6_NEXT_HOP_MAC_LOOKUP_ALLOW_ALL_OUT
+      Friendly name : DEFAULT_IPV6_NEXT_HOP_MAC_LOOKUP_ALLOW_ALL_OUT
+      Priority : 300
+      Direction : OUT
+      Type : IPv6
+        Conditions:
+            <none>
+      Match type : Priority-based match
+
+    RULE : OUTGOING_IPV6_ALLOW_ALL_RULE
+        Friendly name : OUTGOING_IPV6_ALLOW_ALL_RULE
+        Priority : 1000
+        Flags : 1 terminating 
+        Type : allow
+        Conditions:
+            <none>
+        Flow TTL: 0
+
+Command list-rule succeeded!
+
+
+Thu, 20 Oct 2016 09:10:01:__init__.py[line:1627] INFO Connect Redis OK!
+Thu, 20 Oct 2016 09:10:01:__init__.py[line:1627] INFO 22335919 22341425
+Thu, 20 Oct 2016 09:10:01:__init__.py[line:1627] INFO *********************************
+Thu, 20 Oct 2016 09:10:01:__init__.py[line:1627] INFO 20263dc1127a9a16800c7c01f47475c5
+Thu, 20 Oct 2016 09:10:01:__init__.py[line:1627] INFO *********************************
+Thu, 20 Oct 2016 09:10:18:__init__.py[line:1627] INFO 22335919
+Thu, 20 Oct 2016 09:10:18:__init__.py[line:1627] INFO 22341425
+Thu, 20 Oct 2016 09:10:18:__init__.py[line:1627] INFO ICM tickets Data have issue:  
+Thu, 20 Oct 2016 09:10:18:__init__.py[line:1627] INFO ICM tickets Insert Data have issue:  
+Thu, 20 Oct 2016 09:10:18:__init__.py[line:1627] INFO Run done!
+Thu, 20 Oct 2016 09:10:29:__init__.py[line:1627] INFO Connect Redis OK!
+Thu, 20 Oct 2016 09:10:29:__init__.py[line:1627] INFO 22335919 22341425
+Thu, 20 Oct 2016 09:10:29:__init__.py[line:1627] INFO *********************************
+Thu, 20 Oct 2016 09:10:29:__init__.py[line:1627] INFO 20263dc1127a9a16800c7c01f47475c5
+Thu, 20 Oct 2016 09:10:29:__init__.py[line:1627] INFO *********************************
+Thu, 20 Oct 2016 09:11:10:__init__.py[line:1627] INFO 22335919
+Thu, 20 Oct 2016 09:11:10:__init__.py[line:1627] INFO 22341425
+Thu, 20 Oct 2016 09:11:10:__init__.py[line:1627] INFO ICM tickets Data have issue:  
+Thu, 20 Oct 2016 09:11:10:__init__.py[line:1627] INFO ICM tickets Insert Data have issue:  
+Thu, 20 Oct 2016 09:11:10:__init__.py[line:1627] INFO Run done!
