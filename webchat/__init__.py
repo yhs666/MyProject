@@ -56,8 +56,8 @@ if __name__ == '__main__':
     content = str(sys.argv[3])  #zabbix传过来的第三个参数
     '''
     
-    corpid='wx9af1d98cf200bf30'
-    corpsecret='fL4HE7Flz8LPSvklSX81L8EZqHxUOZ7udXPDWGFKNa0p1EGiNRXyclyyU2bHHJ5G'
+    corpid='wx9af1d98cf200bf300'
+    corpsecret='fL4HE7Flz8LPSvklSX81L8EZqHxUOZ7udXPDWGFKNa0p1EGiNRXyclyyU2bHHJ5G0'
     
     
     user='Jacky'
